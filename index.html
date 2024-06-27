@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css files/style.css">
+<link rel="stylesheet" href="css files/bootstrap.min.css">
+
+<title>weather</title>
+
+</head>
+<body>
+
+   <header class="py-5 ">
+      <!-- <div class="container"> -->
+         <nav class="navbar navbar-expand-lg p-0 ">
+            <div class="container">
+               <div class="nav-brand">
+                  <img src="images/logo@2x.png" class="me-2" alt="">
+                  <div class="site-title d-inline-block">
+                     <h1>weather</h1>
+                     <p>tagline goes here</p>
+                  </div>
+               </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav ms-auto mb-lg-0">
+                  <li class="">
+                     <a class="nav-link text-light px-4 active" aria-current="page" href="#">Home</a>
+                  </li>
+                  <li class="">
+                     <a class="nav-link text-light px-4" href="#">news</a>
+                  </li>
+                  <li class="">
+                     <a class="nav-link text-light px-4" href="#">live cameras</a>
+                  </li>
+                  <li class="">
+                     <a class="nav-link text-light px-4" href="#">photos</a>
+                  </li>
+                  <li class="">
+                     <a class="nav-link text-light px-4" href="#">contact</a>
+                  </li>
+                 
+               </ul>
+            </div>
+            </div>
+         </nav>
+      <!-- </div> -->
+     
+   </header>
+<main>  
+   <section class="hero">
+      <div class="container">
+         <form action="" class="hero-form mx-auto">
+            <input type="text" class="w-100 rounded-pill input searchInput" placeholder="find your location...">
+            <button type="submit" class="btn rounded-pill BtnFind">find</button>
+         </form>
+      </div>
+   </section>
+
+   <section class="forcast">
+      <div class="container">
+         <div class="forcast-container mx-auto row mb-5 position-relative">
+            <div class="col-lg-4 today p-0 ">
+               <div class="date-div d-flex justify-content-between">
+                  <span class="day-span"></span>
+                  <span class="date-span"></span>
+               </div>
+               <div class="forcast-content">
+                  <div class="location"></div>
+                  <div class="temprature">
+                     <span class="degree"></span>
+                     <span ><img class="icon" src="" alt=""></span>
+                  </div>
+                  <div class="indicator dayInd"></div>
+                  <div class="wind-speed">
+                     <img src="images/icon-umberella.png" alt="" class="mx-2"> <span class="humidity"></span>
+                     <img src="images/icon-wind.png" alt="" class="mx-2"> <span class="wind "></span>
+                     <img src="images/icon-compass.png" alt="" class="mx-2"> <span class="windDir"></span>
+                  </div>
+
+               </div>
+            </div>
+            <div class="col-lg-4 second-day p-0 text-center">
+               <div class="day">friday</div>
+               <div class="px-4">
+                  <div class=" mt-5 mb-4"><img class="weather-icon" src="" alt=""></div>
+                  <div class="max-degree"></div>
+                  <div class="min-degree"></div>
+                  <div class="next indicator"></div>
+               </div>
+              
+            </div>
+            <div class="col-lg-4 third-day p-0 text-center">
+               <div class="day">friday</div>
+               <div class="px-4">
+                  <div class=" mt-5 mb-4"><img class="weather-icon" src="" alt=""></div>
+                  <div class="max-degree"></div>
+                  <div class="min-degree"></div>
+                  <div class="next indicator"></div>
+               </div>
+              
+            </div>
+           
+         </div>
+      </div>
+   </section>
+</main>
+
+<footer class="py-5">
+   <div class="container">
+      <div class="row footer ">
+         <div class="col-md-8">
+            <form action="" class="footer-form">
+               <input type="text" class="w-100 rounded-pill input" placeholder="enter your email to subscribe">
+               <button type="submit" class="btn rounded-pill BtnSub">subscribe</button>
+            </form>
+         </div>
+         <div class="col-md-4 d-flex justify-content-center">
+            <span class="mx-3"><i class="fa-brands fa-facebook-f"></i></span>
+            <span class="mx-3"><i class="fa-brands fa-twitter"></i></span>
+            <span class="mx-3"><i class="fa-brands fa-google"></i></span>
+            <span class="mx-3"><i class="fa-brands fa-pinterest-p"></i></span>
+         </div>
+      </div>
+      <p>Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+   </div>
+</footer>
+
+
+   <script src="js files/bootstrap.bundle.min.js" > </script>
+   <script src="js files/script.js" > </script>
+</body>
+</html>
